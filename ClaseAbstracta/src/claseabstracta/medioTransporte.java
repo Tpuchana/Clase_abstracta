@@ -14,7 +14,7 @@ public class medioTransporte {
     protected int cantidadPasajeros;
     protected boolean motorOn;
 
-    public medioTransporte(boolean deMotor, int cantidadPasajeros, boolean motorOn) {
+    public medioTransporte(boolean deMotor, int cantidadPasajeros) {
         this.deMotor = deMotor;
         this.cantidadPasajeros = cantidadPasajeros;
         this.motorOn = false;

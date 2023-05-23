@@ -10,17 +10,23 @@ package claseabstracta;
  */
 public class transporteTerrestre extends medioTransporte {
     //atributos
-    private String categoria;
+    private categoriaTTerrestre categoria;
     private int numeroLlantas;
     private boolean conTecho;
     //constructor
-    public transporteTerrestre(String categoria, int numeroLlantas, boolean conTecho, boolean deMotor, int cantidadPasajeros, boolean motorOn){
-        super(deMotor, cantidadPasajeros, motorOn);
-        this.categoria = categoria;
+    public transporteTerrestre(categoriaTTerrestre categoria, int numeroLlantas, boolean conTecho,int cantidadPasajeros){
+        super(categoria.isdeMotor(), cantidadPasajeros);        
         this.numeroLlantas = numeroLlantas;
         this.conTecho = conTecho;
         
         
+    }
+    public void conducir(){
+        if (this.motorOn){
+            System.out.println("Conduciendo... ");
+        }else{
+            System.out.println("El motor está apagado");
+        }
     }
 
     
