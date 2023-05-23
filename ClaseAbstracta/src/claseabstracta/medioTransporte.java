@@ -48,8 +48,16 @@ public class medioTransporte {
     return this.motorOn;
 }
     public void acelerar(){
-        if(motorOn || !deMotor){
+        if(motorOn || !this.deMotor){
             System.out.println("Acelerando");
+        }else{
+            System.out.println("El motor no está encendido");
+        }
+    }
+    
+     public void frenar(){
+        if(motorOn || !this.deMotor){
+            System.out.println("Frenando...");
         }else{
             System.out.println("El motor no está encendido");
         }
