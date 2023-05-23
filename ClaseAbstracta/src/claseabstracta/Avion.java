@@ -15,7 +15,7 @@ public class Avion extends transporteAereo {
     private int numTurbinas;
 
     public Avion(int numTurbinas, int cantidadPasajeros) {
-        super(cantidadPasajeros);
+        super(true, true, cantidadPasajeros);
         this.numTurbinas = numTurbinas;
     }
     
